@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90vw;
+  padding: 0 1rem;
+  margin: 3rem auto 6rem;
+  gap: 1rem;
+}
+
+.footer {
+  text-align: center;
+  background-color: red;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+  color: whitesmoke;
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  width: 90vw;
+}
+.title {
+  display: flex;
+  align-items: center;
+}
+.menuList {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}

@@ -1,12 +1,11 @@
 import { useState } from 'react';
-import Layout from '../components/layout';
+import Layout, { siteTitle } from '../components/layout';
 
 export default function TermsPage() {
   const [termsAccepted, setTermsAccepted] = useState(false);
-
   return (
     <>
-      <Layout>
+      <Layout title='Terms'>
         <p className='terms'>By using this website, you agree to...</p>
         <label htmlFor='termsAccepted'>Fine, I accept</label>
         <input

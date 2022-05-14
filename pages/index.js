@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect } from 'react';
-import Layout from '../components/layout';
+import Layout, { siteTitle } from '../components/layout';
 
 export default function IndexPage() {
   useEffect(() => {
@@ -10,7 +10,7 @@ export default function IndexPage() {
 
   return (
     <div>
-      <Layout>
+      <Layout title='Home'>
         <p>Hello Wilder !</p>
         <Image
           src='/images/Wild-Code-School-logo.png'

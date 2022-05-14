@@ -1,11 +1,11 @@
 import Image from 'next/image';
-import Layout from '../components/layout';
+import Layout, { siteTitle } from '../components/layout';
 
 export default function AboutPage() {
   return (
     <>
-      <Layout>
-        <div>
+      <Layout title='About'>
+        <div className='container'>
           It is a long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout. The point of
           using Lorem Ipsum is that it has a more-or-less normal distribution of
@@ -16,6 +16,12 @@ export default function AboutPage() {
           infancy. Various versions have evolved over the years, sometimes by
           accident, sometimes on purpose (injected humour and the like).
         </div>
+        <style jsx>{`
+          .container {
+            margin: 50px;
+            color: blue;
+          }
+        `}</style>
       </Layout>
     </>
   );

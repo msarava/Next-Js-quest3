@@ -25,9 +25,14 @@
 .title {
   display: flex;
   align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 .menuList {
   list-style: none;
   display: flex;
   gap: 1rem;
+}
+.menuItems :hover {
+  font-weight: bold;
 }
